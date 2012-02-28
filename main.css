@@ -86,24 +86,20 @@ text-decoration:none
 a:hover,a:active{
 text-decoration:underline
 }
-.arrow{
-background:url(./images/arrow.png) no-repeat right;
-padding-right:23px
-}
 strong{
 font-weight:bold
 }
 .clear{
 clear:both
 }
-.content,.discover,.further,.footer{
+.content,.discover,.footer{
 width:937px;
 margin:0 auto
 }
-.content,.discover,.further{
+.content,.discover{
 margin-top:30px
 }
-.content,.discover,.further{
+.content,.discover{
 -moz-border-radius:5px;
 -moz-box-shadow:0 1px 3px rgba(0,0,0,0.15);
 -webkit-border-radius:5px;
@@ -129,26 +125,94 @@ margin-left:140px
 .content .header h2{
 color:#777;font-size:26px;font-weight:normal;line-height:48px
 }
-.content .bigphoto{background:url(./images/meal9.jpg) no-repeat;padding-top:457px}
+
+.content .bigphoto{
+	background:url(./images/meal9.jpg)
+	no-repeat;padding-top:457px
+}
+
 .discover{background-color:#fff}
-.discover .item-nav{background:url(./images/discover-gradient.png) repeat-x 0 bottom;border-bottom:1px solid #ddd;padding:20px 0 9px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}
-.discover .item-nav h2{text-align:center;padding-bottom:10px}
-.discover .item-nav ul{height:82px;padding-left:19px;margin-top:16px}
-.discover .item-nav ul li{float:left;font-size:11px;font-weight:bold;width:98px;padding-right:2px;background:url(./images/divider.png) no-repeat top right;position:relative}
-.discover .item-nav ul li.last{background:none}
-.discover .item-nav ul li.active i{position:relative;display:block;background:url(./images/sprite.png) no-repeat 0 -29px;height:11px;width:18px;z-index:2;margin:-1px auto 0}
-.discover .item-nav ul li a{display:block;color:#333;height:30px;padding-top:61px;text-align:center}
-.discover .item-nav ul li a:hover{text-decoration:underline}
-.discover .item-nav ul li.resume a{background:url(./images/linkedin-icon.png) no-repeat center 0}
-.discover .item-nav ul li.blog a{background:url(./images/blogger-icon.png) no-repeat center 0}
-.discover .item-nav ul li.twitter a{background:url(./images/twitter-icon.png) no-repeat center 0}
-.discover .item{display:none;padding:25px 40px 0;height:355px;-webkit-border-bottom-left-radius:5px;-webkit-border-bottom-right-radius:5px;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px}.discover .item .video{float:right;margin-left:40px}
+.discover .item{
+	position:relative;
+	display:none;
+	padding:25px 40px 0;
+	height:355px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px
+}
+
 .discover .item.active{display:block}
 .discover .item h3,.discover .item h4,.discover .item p{padding-bottom:10px}
-.discover .item h3{font-size:26px;line-height:30px;margin-top:10px}
-.discover .item#blog{padding-right:550px;background:url(./images/artwork/blog.png) no-repeat right bottom}
-.discover .item#twitter{padding-right:530px;background:url(./images/artwork/twitter.jpg) no-repeat 500px top}
-.discover .item#resume{padding-right:430px;background:url(./images/artwork/resume.png) no-repeat 488px center}
-.footer{color:#888;text-shadow:0 1px 0 #000;font-size:12px;padding:40px 0;text-align:center}
+.discover .item h3{
+	font-size:26px;
+	line-height:30px;
+	margin-top:10px	
+}
+
+.discover .item#resume{
+	padding-right:430px;
+	background:url(./images/artwork/resume.png) no-repeat 488px center
+}
+
+.discover .item a.l1{
+	position: absolute;	
+	top: 54px;
+	left: 527px;
+	width: 156px;
+	height: 78px;
+}
+
+.discover .item a.l2{
+	position: absolute;
+	top: 68px;
+	left: 710px;
+	width: 163px;
+	height: 68px;
+}
+
+.discover .item a.l3{
+	position: absolute;
+	top: 142px;
+	left: 530px;
+	width: 140px;
+	height: 76px;
+}
+
+.discover .item a.l4{
+	position: absolute;
+	top: 160px;
+	left: 710px;
+	width: 170px;
+	height: 34px;
+}
+
+.discover .item a.l5{
+	position: absolute;
+	top: 240px;
+	left: 535px;
+	width: 136px;
+	height: 73px;
+}
+
+.discover .item a.l6{
+	position: absolute;
+	top: 236px;
+	left: 722px;
+	width: 128px;
+	height: 65px;
+}
+
+
+.footer{
+	color:#888;
+	text-shadow:0 1px 0 #000;
+	font-size:12px;
+	padding:40px 0;
+	text-align:center
+}
 .footer a{color:#aaa}
 .footer li{display:inline;margin-right:8px}
