@@ -155,7 +155,7 @@ color:#777;font-size:26px;font-weight:normal;line-height:48px
 
 .discover .item#resume{
 	padding-right:430px;
-	background:url(./images/artwork/resume.png) no-repeat 488px center
+	background:url(./images/artwork/resume.png) no-repeat 488px center;
 }
 
 .discover .item a.l1{
@@ -166,6 +166,10 @@ color:#777;font-size:26px;font-weight:normal;line-height:48px
 	height: 78px;
 }
 
+.discover .item a.l1:hover{
+	background:url(./images/artwork/resume-tl1.png) -39px -9px no-repeat;
+}
+
 .discover .item a.l2{
 	position: absolute;
 	top: 68px;
@@ -174,12 +178,21 @@ color:#777;font-size:26px;font-weight:normal;line-height:48px
 	height: 68px;
 }
 
+.discover .item a.l2:hover{
+	background:url(./images/artwork/resume-lifl.png) -225px -21px no-repeat;
+}
+
+
 .discover .item a.l3{
 	position: absolute;
 	top: 142px;
 	left: 530px;
 	width: 140px;
 	height: 76px;
+}
+
+.discover .item a.l3:hover{
+	background:url(./images/artwork/resume-ifa.png) -46px -97px no-repeat;
 }
 
 .discover .item a.l4{
@@ -198,12 +211,20 @@ color:#777;font-size:26px;font-weight:normal;line-height:48px
 	height: 73px;
 }
 
+.discover .item a.l5:hover{
+	background:url(./images/artwork/resume-obeo.png) -48px -196px no-repeat;
+}
+
 .discover .item a.l6{
 	position: absolute;
 	top: 236px;
 	left: 722px;
 	width: 128px;
 	height: 65px;
+}
+
+.discover .item a.l6:hover{
+	background:url(./images/artwork/resume-ibm.png) -235px -191px no-repeat;
 }
 
 
