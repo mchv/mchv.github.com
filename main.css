@@ -117,8 +117,23 @@ position:relative
 .content .header{
 height:94px;
 padding:35px 40px;
-border-bottom:1px solid #ddd
+border-bottom:1px solid #ddd;
+position:relative;
 }
+
+.content .header a.blog{
+	position: absolute;	
+	top: 85px;
+	left: 460px;
+	width: 388px;
+	height: 39px;
+	background:url(./images/artwork/blogbanner.png) no-repeat;
+}
+
+.content .header a.blog:hover{
+	background:url(./images/artwork/blogbanneru.png) no-repeat;
+}
+
 .content .header h1,.content .header h2{
 margin-left:140px
 }
