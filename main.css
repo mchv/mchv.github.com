@@ -1,4 +1,3 @@
-
 /* reset */
 
 html{
@@ -174,6 +173,7 @@ h1 {
 
 .text a:hover {
 	text-decoration: none;
+	color: #0084B4;
 }
 
 .border-box {
