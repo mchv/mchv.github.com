@@ -168,14 +168,13 @@ h1 {
 }
 
 .text a {
-	color: #6E6E70;
-	border-bottom: 1px dashed #6E6E70;
+	color: #D15D5D;
 	text-decoration: none;
 }
 
 .text a:hover {
 	text-decoration: none;
-	color: #0084B4;
+	border-bottom: 1px solid #D15D5D;
 }
 
 .border-box {
@@ -194,7 +193,7 @@ h1 {
 }
 
 .zenexity {
-	background-image: url('./images/zenexity-s.png');
+	background-image: url('./images/zengularity-s.png');
 	background-position: center; 
 }
 
@@ -239,6 +238,7 @@ ul.logos a {
 }
 
 .links a:hover {
-  color: #0084B4;
+  /*color: #D15D5D;*/
+  border-bottom: 2px solid #D15D5D;
 }
 
