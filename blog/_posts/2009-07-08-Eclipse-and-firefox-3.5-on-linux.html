@@ -1,0 +1,10 @@
+---           
+layout: post
+title: Eclipse and firefox 3.5 on linux
+date: 2009-07-08 15:21:00 UTC
+updated: 2009-07-08 15:21:00 UTC
+comments: false
+categories: Eclipse Firefox
+---
+ 
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.mozilla.com/firefox/"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 105px;" src="http://www.mozilla.com/img/tignish/home/feature-logo.png" alt="" border="0" /></a><br /><br />If you updated to the last version of the cool open-source web browser, <a style="font-family: verdana;" href="http://www.mozilla.com/firefox/">mozilla firefox</a>, on your favorite linux distro, you may have noticed some problems. For instance, if you opened the welcome view or the help contents, the following exception has appeared :<br /><br /><span style="font-style: italic;font-family:courier new;" >org.eclipse.swt.SWTError: XPCOM error -2147467259</span><br /><br />This comes from xulrunner 1.9.1 which breaks binary compatibility with previous versions.You need to add to your eclipse.ini file as jvm argument (after "-vmargs") :<br /><br /><span style="font-style: italic;font-family:courier new;" >-Dorg.eclipse.swt.browser.XULRunnerPath=/usr/lib/xulrunner-1.9.0.11</span><br /><br />Hope this help.

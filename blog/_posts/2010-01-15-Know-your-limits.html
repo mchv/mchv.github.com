@@ -1,0 +1,10 @@
+---           
+layout: post
+title: Know your limits
+date: 2010-01-15 23:07:15 UTC
+updated: 2010-01-15 23:07:15 UTC
+comments: false
+categories: Eclipse SWT
+---
+ 
+Thanks to OSGi one of the main qualities of Eclipse ecosystem is its modularity.<br />In a modular architecture, contract between components is fundamental. I called contract not only the features offered by a component but also its limitations. Quite often we tend to concentrate on features and and miss limitations.<br /><br />To illustrate my point I will take as an example SWT Eclipse component<br />I recently needed to add printing support to a custom editor. SWT provides some <a href="http://help.eclipse.org/help32/index.jsp?topic=/org.eclipse.platform.doc.isv/reference/api/org/eclipse/swt/printing/package-summary.html">printing API</a>. I first tried an approach which consisted of printing a snapshot of my already drawn widget. I did it using the <a href="http://www.eclipse.org/swt/faq.php#noprintimage">SWT faq</a> and added quite easily header, footer and fit to page support but it remained a blocking bug. Sometimes, randomly, a white shadow (of the previously opened print dialog) appeared on my printed widget. I tried to hack by calling redraw and update methods on the control but as I am not a graphic guru I gave up and finally have implemented the printing feature with success using the excellent <a href="http://code.google.com/p/swt-paperclips/">PaperClips</a> library.<br /><br />During my hack attempt I saw in code that <span style="font-style: italic;">Printer.getDPI()</span> returns always <span style="font-style: italic;">72X72</span> in SWT GTK implementation. I don't want to blame anyone neither SWT nor <a href="http://bugzilla.gnome.org/show_bug.cgi?id=346245">GTK</a>, just remark that on linux print is not completely supported, and <span style="font-weight: bold;">this information may be difficult to find </span>until your get the bug or read concerned code.<br /><br />So quick reminder for developers : think to document your component limitations  !
